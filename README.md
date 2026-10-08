@@ -63,7 +63,6 @@ exports['px-hud']:SetVisible(true)
 exports['px-hud']:SetSuppressed(true)
 exports['px-hud']:SetSuppressed(false)
 exports['px-hud']:Notify({ description = 'Saved', type = 'success' })
-exports['px-hud']:SetPostal('8022', 43.9)
 ```
 ## 🗺️ Map & Stream Credits
 
