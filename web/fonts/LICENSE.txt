@@ -1,0 +1,15 @@
+Webfonts bundled with ox_inventory
+===================================================
+
+These files are unmodified subsets served by Google Fonts, mirrored
+locally so the UI needs no external requests.
+
+  Inter            — SIL Open Font License 1.1
+  Roboto           — Apache License 2.0
+  Oswald           — SIL Open Font License 1.1
+  JetBrains Mono   — SIL Open Font License 1.1
+  Nunito           — SIL Open Font License 1.1
+
+SIL OFL 1.1:      https://scripts.sil.org/OFL
+Apache 2.0:       https://www.apache.org/licenses/LICENSE-2.0
+Source:           https://fonts.google.com

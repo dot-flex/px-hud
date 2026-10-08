@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PX HUD</title>
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <link rel="stylesheet" href="fontawesome/css/solid.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="notify.css">
+</head>
+<body>
+  <main id="hud" hidden>
+    <div id="map-frame" class="movable" hidden data-i18n-aria="minimap" aria-label="Minimap"></div>
+    <section id="vitals" class="vitals movable" data-i18n-aria="player_status" aria-label="Player status">
+      <div id="health" class="status-ring health" data-i18n-aria="health" aria-label="Health"><svg class="ring-meter" viewBox="0 0 54 54" aria-hidden="true"><circle class="ring-track" cx="27" cy="27" r="21"/><circle class="ring-progress" cx="27" cy="27" r="21" pathLength="100"/></svg><i class="fa-solid fa-heart-pulse" aria-hidden="true"></i></div>
+      <div id="armor" class="status-ring armor" data-i18n-aria="armor" aria-label="Armor"><svg class="ring-meter" viewBox="0 0 54 54" aria-hidden="true"><circle class="ring-track" cx="27" cy="27" r="21"/><circle class="ring-progress" cx="27" cy="27" r="21" pathLength="100"/></svg><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></div>
+      <div id="stamina" class="status-ring stamina" data-i18n-aria="stamina" aria-label="Stamina"><svg class="ring-meter" viewBox="0 0 54 54" aria-hidden="true"><circle class="ring-track" cx="27" cy="27" r="21"/><circle class="ring-progress" cx="27" cy="27" r="21" pathLength="100"/></svg><i class="fa-solid fa-bolt" aria-hidden="true"></i></div>
+      <div id="voice" class="status-ring voice" data-i18n-aria="voice" aria-label="Microphone"><svg class="ring-meter" viewBox="0 0 54 54" aria-hidden="true"><circle class="ring-track" cx="27" cy="27" r="21"/><circle class="ring-progress" cx="27" cy="27" r="21" pathLength="100"/></svg><i class="fa-solid fa-microphone" aria-hidden="true"></i></div>
+      <div id="hunger" class="status-ring hunger" data-i18n-aria="hunger" aria-label="Hunger"><svg class="ring-meter" viewBox="0 0 54 54" aria-hidden="true"><circle class="ring-track" cx="27" cy="27" r="21"/><circle class="ring-progress" cx="27" cy="27" r="21" pathLength="100"/></svg><i class="fa-solid fa-apple-whole" aria-hidden="true"></i></div>
+      <div id="thirst" class="status-ring thirst" data-i18n-aria="thirst" aria-label="Thirst"><svg class="ring-meter" viewBox="0 0 54 54" aria-hidden="true"><circle class="ring-track" cx="27" cy="27" r="21"/><circle class="ring-progress" cx="27" cy="27" r="21" pathLength="100"/></svg><i class="fa-solid fa-bottle-water" aria-hidden="true"></i></div>
+    </section>
+    <section id="navigation" class="navigation" hidden data-i18n-aria="waypoint" aria-label="Waypoint">
+      <div id="waypoint" hidden><i id="waypoint-arrow" class="fa-solid fa-arrow-up"></i><span id="waypoint-distance"></span></div>
+    </section>
+    <div id="postal" hidden><span class="postal-label" data-i18n="nearest_postal">Nearest Postal: </span><span id="postal-code"></span> <span id="postal-distance"></span></div>
+    <section id="vehicle" class="vehicle movable" hidden data-i18n-aria="vehicle" aria-label="Vehicle">
+      <div class="speedo-top">
+        <div id="speed" data-i18n-aria="speed" aria-label="Speed"><span class="leading">0</span><span class="leading">0</span><span>0</span></div>
+        <div class="speedo-meta"><span id="gear">1</span><span id="unit">MPH</span></div>
+      </div>
+      <div id="fuel" class="speedo-fuel" data-i18n-aria="fuel" aria-label="Fuel">
+        <div class="fuel-icon"><i class="fa-solid fa-gas-pump" aria-hidden="true"></i></div>
+        <div class="fuel-track"><div class="fuel-fill"></div></div>
+      </div>
+    </section>
+    <section id="prompts" class="prompts" hidden></section>
+    <span id="build"></span>
+  </main>
+  <aside id="settings" hidden>
+    <div class="settings-heading"><strong data-i18n="editor_title">HUD Editor</strong><button id="close" data-i18n-aria="close" aria-label="Close"><i class="fa-solid fa-xmark"></i></button></div>
+    <p data-i18n="editor_hint">Drag the minimap, HUD or speedometer to reposition it.</p>
+    <label><span data-i18n="hud_scale">HUD scale</span> <input id="vitals-scale" type="range" min="0.65" max="2" step="0.05" value="1"></label>
+    <label><span data-i18n="speedometer_scale">Speedometer scale</span> <input id="vehicle-scale" type="range" min="0.65" max="2" step="0.05" value="1"></label>
+    <div class="settings-actions"><button id="reset" data-i18n="reset">Reset</button><button id="save" data-i18n="save">Save</button></div>
+  </aside>
+  <div class="cinematic-bar top"></div><div class="cinematic-bar bottom"></div>
+  <script src="app.js"></script>
+  <script src="notify.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+/*!
+ * Font Awesome Free 7.3.1 by Fonticons, Inc. - https://fontawesome.com
+ * Selected icon mappings; license in ../LICENSE.txt.
+ */
+@font-face { font-family: 'Font Awesome 7 Free'; font-style: normal; font-weight: 900; font-display: block; src: url('../webfonts/fa-solid-900.woff2') format('woff2'); }
+.fa-solid { display: inline-block; font-family: 'Font Awesome 7 Free'; font-style: normal; font-weight: 900; font-variant: normal; line-height: 1; text-rendering: auto; -webkit-font-smoothing: antialiased; }
+.fa-solid::before { content: var(--fa); }
+.fa-apple-whole { --fa: "\f5d1"; }
+.fa-arrow-up { --fa: "\f062"; }
+.fa-bolt { --fa: "\f0e7"; }
+.fa-bottle-water { --fa: "\e4c5"; }
+.fa-burger { --fa: "\f805"; }
+.fa-exclamation { --fa: "\!"; }
+.fa-gas-pump { --fa: "\f52f"; }
+.fa-glass-water { --fa: "\e4f4"; }
+.fa-heart-pulse { --fa: "\f21e"; }
+.fa-lightbulb { --fa: "\f0eb"; }
+.fa-lock { --fa: "\f023"; }
+.fa-lock-open { --fa: "\f3c1"; }
+.fa-microphone { --fa: "\f130"; }
+.fa-microphone-lines { --fa: "\f3c9"; }
+.fa-shield-halved { --fa: "\f3ed"; }
+.fa-user-slash { --fa: "\f506"; }
+.fa-xmark { --fa: "\f00d"; }
